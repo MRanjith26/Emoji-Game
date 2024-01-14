@@ -1,0 +1,64 @@
+/* Write your code here. */
+.score-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ffffff33;
+  background-color: #ffffff33;
+  gap: 40px;
+  padding: 0px 30px;
+  border-radius: 13px;
+  align-items: center;
+  max-width: 700px;
+}
+.score-details {
+  text-align: center;
+  padding: 0px;
+  font-family: 'Roboto';
+  font-weight: 550;
+}
+.image-details {
+  margin: 0px;
+}
+.score-img {
+  margin: 10px;
+  height: 450px;
+}
+.score-title {
+  font-size: 45px;
+  color: #ffffff;
+}
+.score-text {
+  font-size: 35px;
+  color: #ffffff;
+}
+.total-score {
+  font-size: 35px;
+  color: #6a59ff;
+}
+.play-btn {
+  color: #ffffff;
+  background-color: #ffce27;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 550;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (max-width: 576px) {
+  .score-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 10px;
+  }
+  .image-details {
+    order: 1;
+  }
+  .score-details {
+    order: 2;
+  }
+  .score-img {
+    height: 300px;
+  }
+}
